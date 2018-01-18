@@ -6,7 +6,9 @@ const del = require('del');
 const task = require('../index.js');
 
 const defaults = {
-  src: './test/fixtures/*.scss',
+  src: [
+    './test/fixtures/*.scss',
+  ],
   srcBase: './test/fixtures',
   dest: './test/results/',
 };
